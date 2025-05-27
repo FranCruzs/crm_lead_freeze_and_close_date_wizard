@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_crm_lead_form_inherit" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+        <xpath expr="//header" position="inside">
+    <button 
+        name="action_open_date_update_wizard" 
+        string="Cambiar Fecha" 
+        type="object" 
+        class="btn-primary"
+        groups="__export__.res_groups_155_ad38f38e"
+        invisible="stage_id != 41"
+    />
+</xpath>
+        </field>
+    </record>
+</odoo>
